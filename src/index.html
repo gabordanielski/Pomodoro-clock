@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <title>Pomodoro Clock</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="author" content="Gabor Danielski">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href="/assets/icofont/css/icofont.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 offset-md-2">
+        <h1 class="text-center p-5 p-md-5">P<i class="icofont icofont-tomato"></i>modoro Clock</h1>
+      </div>
+    </div>
+    <div class="row text-center mb-3 mb-md-3">
+      <div class="col-6 col-md-3 offset-md-3 break-panel">
+        <p>BREAK LENGTH</p>
+        <p>
+          <button type="button" name="button" class="break_minus">-</button>
+          <span class="span_break">5</span>
+          <button type="button" name="button" class="break_plus">+</button>
+        </p>
+      </div>
+      <div class="col-6 col-md-3 session-panel">
+        <p>SESSION LENGTH</p>
+        <p>
+          <button type="button" name="button" class="session_minus">-</button>
+          <span class="span_session">25</span>
+          <button type="button" name="button" class="session_plus">+</button>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="clock mt-4 mt-md-4">
+        <p class="text-center action">Session</p>
+        <p class="text-center session_time">25</p>
+        <p class="text-center break_time">5</p>
+        <div class="fill"></div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/pomodoro.js"></script>
+</body>
+</html>

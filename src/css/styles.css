@@ -1,0 +1,77 @@
+html {
+  font-size: 17px; }
+  html body {
+    background-color: #35a945e8;
+    font-family: 'Lato', sans-serif; }
+    html body button {
+      border: 0;
+      background-color: white;
+      cursor: pointer;
+      padding: 5px;
+      background-color: #35a94500; }
+    html body button:focus {
+      outline: 0; }
+    html body .icofont-tomato {
+      color: #ff0000c7; }
+    html body .clock {
+      width: 260px;
+      height: 260px;
+      margin: 0 auto;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border: 4px solid #00000000;
+      box-shadow: 0 0 0 3px red; }
+      html body .clock p {
+        margin: 0; }
+      html body .clock .action {
+        font-size: 40px;
+        position: relative;
+        top: 10%;
+        z-index: 3; }
+      html body .clock .session_time {
+        font-size: 60px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        line-height: 1;
+        z-index: 3; }
+      html body .clock .break_time {
+        font-size: 60px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        line-height: 1;
+        z-index: 3;
+        display: none; }
+      html body .clock .fill {
+        width: 100%;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        background: red; }
+
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 0 3px red;
+    border: 4px solid #00000000;
+    width: 260px;
+    height: 260px; }
+  50% {
+    box-shadow: 0 0 100px 50px red, inset 0 0 40px 5px red;
+    border: 4px solid red;
+    width: 290px;
+    height: 290px; }
+  100% {
+    box-shadow: 0 0 0 3px red;
+    border: 4px solid #00000000;
+    width: 260px;
+    height: 260px; } }
+
+.shadow-pulse {
+  animation-name: shadowPulse;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease; }
