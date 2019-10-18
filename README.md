@@ -17,8 +17,6 @@ Project created to learn more about jQuery, simple animations and Javascript.
 * jQuery
 * Bootstrap
 * Sass
-* AJAX
-* API usage
 * Gulp
 * Npm 
 
